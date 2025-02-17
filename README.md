@@ -39,5 +39,40 @@ Each model was trained and evaluated using appropriate metrics, including precis
 
 The CatBoost model achieved the highest accuracy on the Kaggle submission, reaching 0.88811. Further optimization of a Fully Connected Neural Network (FCNN) improved the performance to 0.88678.  While other models provided competitive results, the tree-based ensemble methods and the fine-tuned FCNN demonstrated the strongest predictive capabilities.
 
-**(Include a table summarizing the performance of all models.  This could be a Markdown table or a link to a CSV file containing the results.)**
+## Setup and Running the Code
+
+This project requires Python 3.x and the packages listed in `requirements.txt`. It is highly recommended to create a dedicated conda environment to manage dependencies.
+
+### 1. Download the Data
+
+You'll need to download the following CSV files from the [Kaggle Loan Default dataset](https://www.kaggle.com/datasets/nikhil1e9/loan-default):
+
+*   `train.csv`
+*   `test.csv`
+*   `sample_submission.csv`
+
+Place these files in a directory named `data/` within the project folder. Create the `data/` directory if it doesn't already exist.
+
+### 2. Create a Conda Environment (Recommended)
+
+It's best practice to use a virtual environment to isolate project dependencies. Conda is recommended for this project.
+
+```bash
+conda create -n loan_default_env python=3.9  # Or your preferred Python version
+conda activate loan_default_env
+```
+
+### 3. Install Dependencies
+
+Navigate to the project directory in your terminal and install the required packages:
+
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Notebook
+The primary analysis and model training are performed in the single Jupyter Notebook given. Run it to generate all the plots and results.
+
+
 
