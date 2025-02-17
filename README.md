@@ -6,6 +6,12 @@ This project focuses on predicting loan defaults using various machine learning 
 
 This repository contains the code and analysis for predicting loan defaults.  A comprehensive suite of machine learning models were developed and evaluated, including tree-based ensembles, classical models, and deep learning architectures.  Extensive Exploratory Data Analysis (EDA) and preprocessing were conducted to prepare the data for modeling.
 
+## Results
+
+The CatBoost model achieved the highest accuracy on the Kaggle submission, reaching 0.88811. Further optimization of a Fully Connected Neural Network (FCNN) improved the performance to 0.88678.  While other models provided competitive results, the tree-based ensemble methods and the fine-tuned FCNN demonstrated the strongest predictive capabilities.
+
+Please refer to the detailed report available in this repository for comprehensive analysis of all the models implemented.
+
 ## Methodology
 
 ### Data Preprocessing and EDA
@@ -35,9 +41,7 @@ The following machine learning models were implemented and evaluated:
 
 Each model was trained and evaluated using appropriate metrics, including precision, recall, F1-score, and accuracy.  Confusion matrices were generated to visualize model performance. Hyperparameter tuning was performed to optimize model performance.
 
-## Results
 
-The CatBoost model achieved the highest accuracy on the Kaggle submission, reaching 0.88811. Further optimization of a Fully Connected Neural Network (FCNN) improved the performance to 0.88678.  While other models provided competitive results, the tree-based ensemble methods and the fine-tuned FCNN demonstrated the strongest predictive capabilities.
 
 ## Setup and Running the Code
 
